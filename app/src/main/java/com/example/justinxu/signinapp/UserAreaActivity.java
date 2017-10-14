@@ -30,6 +30,6 @@ public class UserAreaActivity extends AppCompatActivity {
     }
 
     public void onClick() {
-        System.out.println("On Click Worked xd");
+        System.out.println("On Click Worked");
     }
 }
