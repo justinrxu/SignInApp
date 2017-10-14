@@ -13,7 +13,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        System.out.println("Worked");
 
         final EditText siUsername = (EditText) findViewById(R.id.siUsername);
         final EditText siPassword = (EditText) findViewById(R.id.siPassword);
@@ -25,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
                 final String username = siUsername.getText().toString();
                 final String password = siPassword.getText().toString();
 
+                System.out.println("Starting Intent");
                 Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
                 startActivity(intent);
             }
