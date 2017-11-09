@@ -13,18 +13,19 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        System.out.println("Worked");
+        this.setTitle("Login Page");
 
-        final EditText siUsername = (EditText) findViewById(R.id.siUsername);
-        final EditText siPassword = (EditText) findViewById(R.id.siPassword);
+        final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+        final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bLogin = (Button) findViewById(R.id.bLogin);
 
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String username = siUsername.getText().toString();
-                final String password = siPassword.getText().toString();
+                final String username = etUsername.getText().toString();
+                final String password = etPassword.getText().toString();
 
+                System.out.println("Starting Intent");
                 Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
                 startActivity(intent);
             }
