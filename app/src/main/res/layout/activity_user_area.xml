@@ -6,10 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".UserAreaActivity">
 
-    <ListView
-        android:id="@+id/lvPeople"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_width="match_parent">
-    </ListView>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:inputType="text"
+            />
+    
+        <ListView
+            android:id="@+id/lvPeople"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </ListView>
+
+    </LinearLayout>
 
 </RelativeLayout>

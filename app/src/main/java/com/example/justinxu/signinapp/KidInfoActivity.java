@@ -32,6 +32,8 @@ public class KidInfoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(KidInfoActivity.this, getIntent().getExtras().getStringArray("kidinfo")[0] + " has been checked in.",
                         Toast.LENGTH_SHORT).show();
+                //Will add database updating here to mark kid as here
+
                 KidInfoActivity.super.onBackPressed();
             }
         });
