@@ -1,7 +1,7 @@
 package com.example.justinxu.signinapp;
 
 /**
- * Created by hemankolla on 2/10/18.
+ * Represents an event of the TriV Coder Dojo
  */
 
 public class Event {
