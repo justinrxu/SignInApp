@@ -1,7 +1,7 @@
 package com.example.justinxu.signinapp;
 
 /**
- * Created by hemankolla on 2/28/18.
+ * -------
  */
 
 public class Attendance {
